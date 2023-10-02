@@ -19,12 +19,6 @@ LRESULT CALLBACK WinApp::WindowProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM l
 }
 
 void WinApp::Initialize() {
-
-	//ウィンドウサイズ
-	const int kCliantWidth = 1280; // 横幅
-	const int kCliantHeight = 720; // 縦幅
-
-
 	//ウインドウプロシージャ	
 	wc.lpfnWndProc = (WNDPROC)WindowProc;
 	//ウインドウクラス名（なんでもいい）
