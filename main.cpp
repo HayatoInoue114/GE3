@@ -9,6 +9,15 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	winApp = new WinApp();
 	winApp->Initialize();
 
+	while (true)
+	{
+		//Windowsのメッセージ処理
+		if (winApp->ProcessMessage()) {
+			//ゲームループを抜ける
+			break;
+		}
+	}
+
 	//windowsAPIの解放
 	delete winApp;
 

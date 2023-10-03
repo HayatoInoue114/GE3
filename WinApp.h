@@ -20,6 +20,9 @@ public:
 	HWND GetHwnd() const { return hwnd; }
 
 	HINSTANCE GetHInstance() const { return wc.hInstance; }
+
+	//メッセージの処理
+	bool ProcessMessage();
 private:
 	//ウインドウクラスの設定
 	WNDCLASS wc{};
